@@ -3,4 +3,7 @@
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
+(require 'color-theme-zenburn)
+(color-theme-zenburn)
+
 (server-start)
