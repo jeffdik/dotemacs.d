@@ -1,0 +1,12 @@
+;;; csharp mode
+(autoload 'csharp-mode "csharp-mode" "Major mode for editing C# code." t)
+(add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))
+(add-to-list 'auto-mode-alist '("\\.asmx$" . csharp-mode))
+(defun my-csharp-mode-hook ()
+  (setq c-basic-offset 4)
+  ;; (c-set-offset 'arglist-intro '++)
+  ;; (c-set-offset 'arglist-cont-nonempty '++)
+  ;;(local-set-key (kbd \"{\") 'c-electric-brace)
+  (local-set-key (kbd "{") 'self-insert-command)
+  )
+(add-hook 'csharp-mode-hook 'my-csharp-mode-hook)
