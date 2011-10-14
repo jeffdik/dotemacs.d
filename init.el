@@ -15,3 +15,5 @@
 
 (when (file-exists-p jad-user-dir)
   (mapc 'load (directory-files jad-user-dir nil "^[^#].*el$")))
+
+(load "custom.el")
