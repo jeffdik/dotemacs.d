@@ -9,3 +9,9 @@
 (color-theme-zenburn)
 
 (server-start)
+
+(setq jad-user-dir (concat user-emacs-directory "jad"))
+(add-to-list 'load-path jad-user-dir)
+
+(when (file-exists-p jad-user-dir)
+  (mapc 'load (directory-files jad-user-dir nil "^[^#].*el$")))
