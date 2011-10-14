@@ -10,6 +10,7 @@
                       starter-kit-js
                       starter-kit-ruby
                       clojure-mode clojurescript-mode clojure-test-mode
+                      csharp-mode
                       parenface
                       markdown-mode yaml-mode tuareg
                       marmalade oddmuse scpaste
